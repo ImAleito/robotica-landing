@@ -50,7 +50,7 @@
             Un robot de servicio para apoyar tareas cotidianas en espacios de la universidad.
           </p>
           <div class="d-flex flex-wrap gap-3">
-            <a href="#robot" class="btn btn-primary btn-lg px-4">Ver el robot</a>
+            <a href="#robot" class="btn btn-light btn-lg px-4">Ver el robot</a>
             <a href="#galeria" class="btn btn-outline-light btn-lg px-4">Galería</a>
           </div>
         </div>
@@ -142,6 +142,65 @@
             <button class="carousel-control-next" type="button" data-bs-target="#robotCarousel" data-bs-slide="next" aria-label="Siguiente">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- especificaciones -->
+  <section class="py-5 bg-surface-alt" id="specs">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-12 col-lg-5">
+          <h2 class="fw-bold text-light mb-3">Especificaciones de Hardware y Firmware</h2>
+          <p class="text-muted-custom mb-4">
+            Componentes y funciones principales del robot.
+          </p>
+          <div class="p-3 border border-secondary-subtle rounded-3 bg-surface">
+            <span class="badge firmware-status mb-2">Estado del Firmware</span>
+            <p class="small text-muted-custom mb-0">v1.2.4 compilado con ESP-IDF / FreeRTOS. Soporta actualización OTA.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="accordion accordion-flush custom-accordion" id="accordionSpecs">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specOne" aria-expanded="false" aria-controls="specOne">
+                  <i class="bi bi-gear-wide-connected me-2" aria-hidden="true"></i> Tren Motriz y Capacidad de Carga
+                </button>
+              </h3>
+              <div id="specOne" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                <div class="accordion-body text-muted-custom">
+                  Dos motores DC con reductora metálica y ruedas caster. Carga máxima: 2.5 kg.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specTwo" aria-expanded="false" aria-controls="specTwo">
+                  <i class="bi bi-shield-check me-2" aria-hidden="true"></i> Protocolos de Seguridad y Parada de Emergencia
+                </button>
+              </h3>
+              <div id="specTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                <div class="accordion-body text-muted-custom">
+                  Se detiene ante obstáculos a menos de 20 cm. Incluye botón físico de emergencia y parada remota.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specThree" aria-expanded="false" aria-controls="specThree">
+                  <i class="bi bi-code-slash me-2" aria-hidden="true"></i> Stack de Software y Conectividad
+                </button>
+              </h3>
+              <div id="specThree" class="accordion-collapse collapse" data-bs-parent="#accordionSpecs">
+                <div class="accordion-body text-muted-custom">
+                  Firmware en C++ con ESP-IDF, comunicación MQTT y panel web.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -61,6 +61,46 @@
   background-color: rgba(16, 18, 20, 0.85);
 }
 
+#inicio,
+#robot,
+#galeria,
+#specs {
+  scroll-margin-top: 5rem;
+}
+
+.firmware-status {
+  background-color: #238636;
+  color: #ffffff;
+}
+
+.custom-accordion .accordion-item {
+  background-color: #1c1f22;
+  border: 1px solid #2f3336;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+  background-color: #222528;
+  color: #e7e9ea;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #2a2d30;
+  color: #ffffff;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: invert(1);
+}
+
+.custom-accordion .bi {
+  color: #ffffff;
+}
+
 #mainNav.navbar-dark .navbar-nav .nav-link.active {
   color: #ffffff !important;
   transition: none;
