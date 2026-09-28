@@ -9,11 +9,78 @@
   background-color: #16181b !important;
 }
 
+.bg-surface-alt {
+  background-color: #1a1c1f !important;
+}
+
 .brand-text {
   font-family: var(--bs-font-sans-serif);
+}
+
+.hero-robot {
+  display: block;
+  width: min(105vw, 560px);
+  max-width: none;
+  height: auto;
+  margin-inline: auto;
+  transform: scale(1.05);
+  transform-origin: center bottom;
+}
+
+.section-intro {
+  max-width: 700px;
+}
+
+.text-muted-custom {
+  color: #8b98a5 !important;
+}
+
+.card-tech {
+  background-color: #222528;
+  border: 1px solid #2f3336;
+  border-radius: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.card-tech:hover {
+  transform: scale(1.03);
+}
+
+.card-icon {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.carousel-item img {
+  height: 420px;
+  background-color: #16181b;
+}
+
+.bg-dark-glass {
+  background-color: rgba(16, 18, 20, 0.85);
 }
 
 #mainNav.navbar-dark .navbar-nav .nav-link.active {
   color: #ffffff !important;
   transition: none;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-robot {
+    margin-bottom: -4.5rem;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-robot {
+    width: min(100%, 560px);
+  }
 }
