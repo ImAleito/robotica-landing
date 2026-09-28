@@ -1,0 +1,19 @@
+:root {
+  --bs-body-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --bs-font-sans-serif: 'Outfit', system-ui, -apple-system, sans-serif;
+  --bs-body-bg: #101214;
+  --bs-body-color: #e7e9ea;
+}
+
+.bg-surface {
+  background-color: #16181b !important;
+}
+
+.brand-text {
+  font-family: var(--bs-font-sans-serif);
+}
+
+#mainNav.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  transition: none;
+}
